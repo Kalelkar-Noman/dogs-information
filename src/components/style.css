@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap);
+.card,
+.skill-level {
+  border-radius: 10px;
+  overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+body {
+  background-color: #303136;
+}
+.navbar-brand {
+  color: #f8f8ff;
+}
+.mid .left {
+  display: flex;
+  align-items: center;
+}
+.mid .left,
+.mid .right {
+  padding-top: 1.4rem;
+}
+.img-dog {
+  max-width: 100%;
+  height: auto;
+}
+.card {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+.body {
+  padding: 10px;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.skill-name {
+  width: 50%;
+  font-size: 16px;
+}
+.skill-level {
+  width: 160px;
+  height: 10px;
+  background-color: #ababab;
+  margin-left: 20px;
+}
+.skill-percent {
+  background-color: #333;
+  height: 100%;
+}
+.skill-percent-number {
+  margin-left: 20px;
+  font-size: 16px;
+}
