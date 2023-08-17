@@ -48,7 +48,7 @@ export default function Header() {
       if (data.length !== 0) {
         // Update the DOM with the dog's information.
         setimg_link(data[0].image_link);
-        setname(data[0].name + " (Male)");
+        setname(data[0].name);
         setgood_with_children(data[0].good_with_children);
         setgood_with_other_dog(data[0].good_with_other_dogs);
         setgood_with_strangers(data[0].good_with_strangers);
