@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Main from "./Main";
-// import { process } from "process";
 import "./style.css";
 export default function Header() {
   const [datas, setdatas] = useState([]);
@@ -22,7 +21,6 @@ export default function Header() {
   const apik = process.env.REACT_APP_APIKE;
   const loaddata = async (event) => {
     event.preventDefault();
-    // ---
     // Get the name of the dog from the input field.
     // Create a URL to fetch the dog's information from the API.
     const url = `https://dogs-by-api-ninjas.p.rapidapi.com/v1/dogs?name=${temp}`;
@@ -31,7 +29,6 @@ export default function Header() {
     const request = {
       method: "GET",
       headers: {
-        // "1ae9d7c9d3msh17dd96620103f5bp12d556jsn848697c45d31"
         "X-RapidAPI-Key": `${apik}`,
         "X-RapidAPI-Host": "dogs-by-api-ninjas.p.rapidapi.com",
       },
@@ -60,7 +57,6 @@ export default function Header() {
         setmax_weight(data[0].max_weight_male);
         setmin_life(data[0].min_life_expectancy);
         setmax_life(data[0].max_life_expectancy);
-        // alert("found.");
       } else {
         alert("Sorry, the dog you are looking for was not found.");
       }
