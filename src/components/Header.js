@@ -32,7 +32,7 @@ export default function Header() {
       method: "GET",
       headers: {
         // "1ae9d7c9d3msh17dd96620103f5bp12d556jsn848697c45d31"
-        "X-RapidAPI-Key": apik,
+        "X-RapidAPI-Key": `${apik}`,
         "X-RapidAPI-Host": "dogs-by-api-ninjas.p.rapidapi.com",
       },
     };
