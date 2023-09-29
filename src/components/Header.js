@@ -19,7 +19,7 @@ export default function Header() {
   const [min_life, setmin_life] = useState(10);
   const [max_life, setmax_life] = useState(12);
   const [shedding, setshedding] = useState(4);
-
+  const apik = process.env.REACT_APP_APIKE;
   const loaddata = async (event) => {
     event.preventDefault();
     // ---
@@ -31,7 +31,8 @@ export default function Header() {
     const request = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "1ae9d7c9d3msh17dd96620103f5bp12d556jsn848697c45d31",
+        // "1ae9d7c9d3msh17dd96620103f5bp12d556jsn848697c45d31"
+        "X-RapidAPI-Key": apik,
         "X-RapidAPI-Host": "dogs-by-api-ninjas.p.rapidapi.com",
       },
     };
